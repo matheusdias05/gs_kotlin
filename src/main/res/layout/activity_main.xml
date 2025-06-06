@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- 5 campos EditText -->
+    <EditText
+        android:id="@+id/editLocal"
+        android:hint="Nome do local"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/editTipo"
+        android:hint="Tipo do evento (chuva, seca, etc.)"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/editImpacto"
+        android:hint="Grau de impacto (leve, moderado, severo)"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/editData"
+        android:hint="Data do evento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/editPessoas"
+        android:hint="Número de pessoas afetadas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- Botão Incluir -->
+    <Button
+        android:id="@+id/btnIncluir"
+        android:text="Incluir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp" />
+
+    <!-- Botão Sobre -->
+    <Button
+        android:id="@+id/btnSobre"
+        android:text="Sobre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp" />
+
+    <!-- Lista de eventos -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_marginTop="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+</LinearLayout>
